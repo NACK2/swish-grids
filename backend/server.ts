@@ -13,7 +13,7 @@ app.get("/players", async (_, res) => {
 
   try {
     players = await convertCSVtoJSON("NBA_Player_IDs.csv");
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Error: ", err.message);
   }
 

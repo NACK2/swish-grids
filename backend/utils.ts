@@ -2,11 +2,11 @@ import csv from "csv-parser";
 import fs from "fs";
 
 export interface Player {
-  NBAID: String;
-  Name: String;
+  NBAID: string;
+  Name: string;
 }
 
-// input: file name of CSV
+// input: fileName: file name of CSV
 // output: array of nba player + id objects
 async function convertCSVtoJSON(fileName: fs.PathLike): Promise<Player[]> {
   return new Promise((resolve, reject) => {
