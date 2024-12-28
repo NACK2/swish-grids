@@ -1,6 +1,7 @@
-## Lint:
+## Linting:
 ```
-npm run lint
+npm run lint:check
+npm run lint:fix
 ```
 
 ## Prettier formatting:
