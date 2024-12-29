@@ -1,12 +1,12 @@
 # Running processes:
 
-## Running frontend:
+### Frontend:
 ```
 cd frontend
 npm run dev
 ```
 
-## Running backend (server):
+### Backend (server):
 ```
 cd backend
 ts-node server.ts
@@ -14,19 +14,19 @@ ts-node server.ts
 
 # CLI Commands:
 
-## Linting:
+### Linting:
 ```
 npm run lint:check
 npm run lint:fix
 ```
 
-## Prettier formatting:
+### Prettier formatting:
 ```
 npm run prettier:check
 npm run prettier:fix
 ```
 
-## To run TypeScript files:
+### To run TypeScript files:
 ```
 ts-node {file}.ts
 ```
