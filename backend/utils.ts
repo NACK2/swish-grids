@@ -1,6 +1,5 @@
 import csv from "csv-parser";
 import fs from "fs";
-import puppeteer from "puppeteer";
 
 export interface Player {
   NBAID: string;
@@ -34,10 +33,7 @@ async function convertCSVtoJSON(fileName: fs.PathLike): Promise<Player[]> {
 // input: NBA ID
 // output: array of NBA teams played for
 async function getTeams(id: string): Promise<string[]> {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-
-  await page.goto(`https://www.nba.com/stats/player/${id}`);
+  // TODO: Use cheerio instead of puppeteer
 
   return Promise.resolve([]);
 }
