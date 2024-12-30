@@ -33,7 +33,8 @@ async function convertCSVtoJSON(fileName: fs.PathLike): Promise<Player[]> {
 // input: NBA ID
 // output: array of NBA teams played for
 async function getTeams(id: string): Promise<string[]> {
-  // TODO: Use cheerio instead of puppeteer
+  // decided not to use cheerio to webscrape b/c the tables on NBA.com were loaded in dynamically using javascript, so
+  // the raw html source code doesn't have the tables, so have to use something like puppeteer to capture dynamic content
 
   return Promise.resolve([]);
 }
