@@ -1,5 +1,11 @@
+import GridLayout from "./components/GridLayout";
+
 function Home() {
-  return <h1>test</h1>;
+  return (
+    <>
+      <GridLayout />
+    </>
+  );
 }
 
 export default Home;
